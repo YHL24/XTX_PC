@@ -1,0 +1,326 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper ul {
+    float: right;
+}
+.shortcut .wrapper li {
+    float: left;
+    height: 52px;
+    line-height: 52px;
+}
+.shortcut .wrapper li a {
+    position: relative;
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut .wrapper li:last-child a::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+}
+.shortcut .wrapper li:last-child a {
+    border-right: 0;
+    padding-right: 0;
+    padding-left: 34px;
+}
+
+/* header */
+.header {
+    margin: 30px auto;
+    height: 70px;
+    line-height: 70px;
+}
+
+.header .logo {
+    float: left;
+    width: 209px;
+    height: 70px;
+}
+.header .logo h1 {
+    font-size: 0;
+}
+.header .logo img {
+    width: 209px;
+}
+
+.header .nav {
+    float: left;
+}
+.header .nav ul {
+    margin-left: 40px;
+}
+.header .nav li {
+    float: left;
+    margin-right: 48px;
+}
+.header .nav li a:hover {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+}
+
+.header .search {
+    position: relative;
+    float: left;
+    margin-left: 34px;
+}
+.header .search input {
+    padding-left: 32px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+.header .search input::placeholder {
+    content: '';
+    font-size: 14px;
+    color: #ccc;
+}
+.header .search span {
+    position: absolute;
+    left: 0;
+    top: 26px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+    vertical-align: middle;
+}
+
+.header .car {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-top: 28px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+}
+.header .car span {
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    width: 20px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #e26237;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* 联系 */
+.contact .wrapper {
+    padding-left: 60px;
+    height: 300px;
+}
+
+/* 客户服务&关注我们 */
+.contact .wrapper li {
+    float: left;
+    margin-right: 100px;
+    width: 193px;
+    height: 300px;
+}
+.contact .wrapper li h3 {
+    text-align: center;
+    margin-top: 79px;
+    margin-bottom: 35px;
+    color: #999;
+    font-weight: normal;
+}
+.contact .wrapper li .box {
+    width: 192px;
+    height: 92px;
+}
+.contact .wrapper li a {
+    position: relative;
+    float: left;
+    padding-top: 55px;
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.contact .wrapper li a:first-child {
+    margin-right: 6px;
+}
+.contact .wrapper li span {
+    position: absolute;
+    left: 32px;
+    top: 22px;
+    width: 29px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+.contact .wrapper li a:last-child span {
+    background-position: -350px -70px;
+}
+.contact .wrapper li:last-child a span {
+    left: 29px;
+    top: 19px;
+    width: 36px;
+    background-position: -205px -15px;
+}
+.contact .wrapper li:last-child a:last-child span {
+    background-position: -350px -15px;
+}
+
+/* 下载APP */
+.contact .wrapper .app {
+    float: left;
+    margin-top: 70px;
+    border-right: 2px solid #f2f2f2;
+    width: 276px;
+    height: 189px;
+}
+.contact .wrapper .app h3 {
+
+    color: #999;
+    font-weight: normal;
+    text-align: center;
+}
+.contact .wrapper .app .box {
+    margin-top: 24px;
+    width: 241px;
+    height: 116px;
+}
+.contact .wrapper .app .box .left {
+    display: inline-block;
+    width: 116px;
+    height: 120px;
+    border: 2px solid #eee;
+    text-align: center;
+    line-height: 120px;
+}
+.contact .wrapper .app .box .right {
+    float: right;
+    padding-top: 10px;
+    width: 103px;
+    height: 99px;
+}
+.contact .wrapper .app .right p {
+    font-size: 14px;
+    color: #999;
+}
+.contact .wrapper .app .right a {
+    display: block;
+    margin-top: 15px;
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+}
+/* 服务热线 */
+.contact .wrapper .number {
+    float: left;
+    margin-left: 74px;
+    margin-top: 78px;
+    width: 160px;
+    height: 122px;
+}
+.contact .wrapper .number h3 {
+    margin-bottom: 40px;
+    color: #999;
+    font-weight: normal;
+    text-align: center;
+}
+.contact .wrapper .number p {
+    font-size: 22px;
+    color: #666;
+}
+.contact .wrapper .number span {
+    font-size: 15px;
+    color: #999;
+}
+
+/* 版权 */
+.footer {
+    height: 345px;
+    background-color: #333;
+}
+.footer .wrapper {
+    width: 1393px;
+    height: 345px;
+}
+.footer .wrapper .top {
+    border-bottom: 3px solid #434343;
+    height: 175px;
+}
+.footer .wrapper .top ul {
+    padding-left: 135px;
+    padding-top: 55px;
+}
+.footer .wrapper .top li {
+    position: relative;
+    float: left;
+    margin-right: 290px;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+}
+.footer .wrapper .top li:last-child {
+    margin-right: 0;
+}
+.footer .wrapper .top li p {
+    margin-left: 77px;
+    font-size: 28px;
+    color: #fff;
+}
+.footer .wrapper .top li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+}
+.footer .wrapper .top li:nth-child(2) span {
+    background-position: -65px 0;
+}
+.footer .wrapper .top li:last-child span {
+    background-position: -130px 0;
+}
+
+.footer .wrapper .botton {
+    height: 168px;
+}
+.footer .wrapper .botton .box {
+    margin-left: 428px;
+    margin-top: 41px;
+    height: 48px;
+}
+.footer .wrapper .botton .box a {
+    font-size: 14px;
+    color: #999;
+}
+.footer .wrapper .botton .box p {
+    font-size: 14px;
+    color: #999;
+    margin-left: 170px;
+    margin-top: 5px;
+}

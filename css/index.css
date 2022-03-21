@@ -1,0 +1,417 @@
+/* 放index页面的样式表 */
+
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+}
+/* 侧导航 */
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8);   
+}
+.banner .aside li {
+    position: relative;
+    width: 251px;
+    height: 50px;
+}
+.banner .aside li a {
+    display: block;
+    padding-left: 36px;
+    width: 251px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.banner .aside li:hover {
+    background-color: #27ba9b;
+}
+.banner .aside li b {
+    font-weight: normal;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.banner .aside li span {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -110px;
+}
+/* 箭头 */
+.banner span {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url(../images/sprites.png);
+}
+.banner .left {
+    left: 260px;
+    top: 228px;
+    background-position: 15px -60px
+}
+.banner .right {
+    right: 10px;
+    top: 228px;
+    background-position: -23px -60px;
+}
+/* 圆点 */
+.banner .botton ul {
+    position: absolute;
+    left: 680px;
+    bottom: 31px;
+}
+.banner .botton li {
+    float: left;
+    margin-right: 16px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(254, 254, 254, 0.43);
+}
+.banner .botton .current {
+    background-color: #fff;
+}
+
+/* 新鲜好物 */
+/* 人气推荐 */
+/* 头部 */
+.goods .hd,
+.popular .hd,
+.brand .hd {
+    padding-top: 40px;
+    height: 114px;
+}
+.goods .hd h2,
+.popular .hd h2,
+.brand .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: normal;
+}
+.goods .hd h2 span,
+.popular .hd h2 span, 
+.brand .hd h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+
+
+/* 查看更多 */
+.goods .hd a,
+.fresh .hd .more, 
+.topic .hd .more {
+    float: right;
+    color: #999;
+}
+.goods .hd a::after,
+.fresh .hd .more::after,
+.topic .hd .more::after {
+    content: '';
+    margin-left: 13px;
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+
+.goods .bd,
+.popular .bd {
+    height: 405px;
+} 
+.goods .bd li,
+.popular .bd li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    text-align: center;
+}
+.goods .bd li:last-child,
+.popular .bd li:last-child {
+    margin-right: 0;
+}
+.goods .bd li .top,
+.popular .bd li .top {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.goods .bd li .botton,
+.popular .bd li .botton {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods .bd li .botton span,
+.popular .bd li .botton span {
+    font-size: 23px;
+}
+.goods .bd li b,
+.popular .bd li b {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    border: 2px solid #27ba9b;
+    border-radius: 3px;
+    width: 28px;
+    height: 51px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #27ba9b;
+}
+
+/* 热门品牌 */
+.brand {
+    height: 466px;
+    background-color: #f5f5f5;
+}
+.brand .wrapper {
+    height: 466px;
+}
+.brand .hd {
+    position: relative;
+}
+.brand .hd b {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/sprites.png);
+    background-color: #e2e2e2;
+}
+.brand .hd .right {
+    right: 0;
+    bottom: 16px;
+    background-position: -36px -71px;
+}
+.brand .hd .left {
+    right: 33px;
+    bottom: 16px;
+    background-position: 4px -71px;
+}
+.brand .hd b:hover {
+    background-color: #27ba9b;
+}
+
+.brand .bd li {
+    float: left;
+    margin-right: 5px;
+    width: 244px;
+    height: 306px;
+    background-color: pink;
+}
+.brand .bd li:last-child {
+    margin-right: 0;
+}
+
+/* 生鲜 */
+.fresh .hd {
+    height: 96px;
+}
+.fresh .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: normal;
+    line-height: 96px;
+}
+.fresh .hd .more {
+    line-height: 96px;
+}
+.fresh .hd ul {
+    float: right;
+}
+.fresh .hd li {
+    float: left;
+}
+.fresh .hd li a {
+    display: inline-block;
+    padding: 0 7px;
+    margin-right: 14px;
+    margin-top: 35px;
+    color: #333
+}
+.fresh .hd li a:hover {
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+
+.fresh .bd .left {
+    float: left;
+    width: 240px;
+    height: 617px;
+}
+.fresh .bd .right {
+    float: right;
+    width: 1000px;
+    height: 617px;
+}
+
+.fresh .bd .right li {
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    padding: 8px 30px;
+    width: 242px;
+    height: 304px;
+}
+.fresh .bd .right li:hover {
+    border: 2px solid #27ba9b
+}
+.fresh .bd .right li h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+.fresh .bd .right li p {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.fresh .bd .right li span {
+    font-size: 22px;
+}
+.fresh .bd .right li .hidden {
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: 0;
+    width: 238px;
+    height: 82px;
+    text-align: center;
+    background-color: #27ba9b;
+}
+.fresh .bd .right li:hover .hidden {
+    display: block;
+}
+.fresh .bd .right li .hidden p {
+    margin: 0 60px;
+    width: 125px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 2px solid #a9dbcc;
+    font-size: 18px;
+    color: #fff;
+}
+.fresh .bd .right li .hidden a {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #fff;
+}
+
+/* 最新专题 */
+.topic {
+    margin-top: 35px;
+    height: 512px;
+    background-color: #f5f5f5;
+}
+.topic .wrapper {
+    height: 512px;
+}
+.topic .wrapper .hd {
+    height: 115px;
+}
+.topic .wrapper .hd h2 {
+    float: left;
+    font-size: 29px;
+    line-height: 115px;
+    font-weight: normal;
+}
+.topic .hd .more {
+    margin-top: 68px;
+}
+
+.topic .bd {
+    height: 357px;
+}
+.topic .bd li {
+    float: left;
+    margin-right: 13px;
+    width: 400px;
+    height: 357px;
+    background-color: #fff;
+}
+.topic .bd a {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 288px;
+}
+.topic .bd a p {
+    position: absolute;
+    top: 215px;
+    left: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.topic .bd a p span {
+    font-size: 16px;
+    color: #999;
+}
+.topic .bd .money {
+    position: absolute;
+    bottom: 29px;
+    right: 18px;
+    width: 81px;
+    height: 27px;
+    background-color: #fff;
+    line-height: 27px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9a2e1f;
+}
+.topic .bd .money b {
+    font-size: 17px;
+}
+.topic .bd .money span {
+    font-size: 16px;
+}
+.topic .bd .botton {
+    position: relative;
+    height: 67px;
+    line-height: 67px;
+}
+.topic .bd .botton li {
+
+    float: left;
+    margin-left: 35px;
+    width: 31px;
+    height: 12px;
+}
+.topic .bd .botton li:last-child {
+    float: right;
+}
+.topic .bd .botton li span {
+    position: absolute;
+    top: 27px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+}
+.topic .bd .botton li:first-child span {
+    left: 17px;
+    background-position: -120px -110px;
+}
+.topic .bd .botton li:nth-child(2) span {
+    left: 95px;
+    background-position: -160px -110px;
+}
+.topic .bd .botton li:last-child span {
+    right: 47px;
+    background-position: -200px -110px;
+}

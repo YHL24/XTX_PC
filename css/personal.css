@@ -1,0 +1,272 @@
+/* 主体 */
+.main {
+    background-color: #f6f6f6;
+}
+.main .wrapper { 
+    padding-top: 20px;
+}
+/* 侧导航 */
+.aside {
+    /* 不设置高的好处：直接加dl，高会自己撑开！！！*/
+    float: left;
+    width: 224px;
+    background-color: #fff;
+}
+.aside dl {
+    /* 不设置高的好处：可以直接往dl里面加dd，dl的下边框会自己往下出现！！！ */
+    padding-left: 52px;
+    padding-top: 37px;
+    border-bottom: 2px solid #f4f4f4;
+    width: 224px;
+}
+.aside dl dt {
+    margin-bottom: 25px;
+}
+.aside dl dd {
+    position: relative;
+    margin-bottom: 20px;
+}
+.aside dl dd a {
+    font-size: 14px;
+    color: #666;
+}
+.aside dl a:hover {
+color: #5cb99e;
+}
+.aside dl a:hover span {
+    display: block;
+}
+.aside dl dd span {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: -13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5eb69c;
+}
+
+/* 右主体 */
+.rbd {
+    float: right;
+    width: 996px;
+    margin-bottom: 30px;
+}
+
+/* hd */
+.rbd .hd {
+    width: 996px;
+    height: 132px;
+    background-color: #27ba9b; 
+}
+.rbd .hd .left {
+    float: left;
+    margin-left: 52px;
+    margin-top: 23px;
+    width: 171px;
+    height: 100px;
+}
+.rbd .hd .left span {
+    margin-left: 26px;
+    font-size: 18px;
+    color: #fff;
+}
+.rbd .hd .right {
+    float: right;
+    margin-top: 35px;
+    width: 460px;
+    height: 65px;
+}
+.rbd .hd .right li {
+    float: left;
+    margin-right: 107px;
+
+}
+.rbd .hd .right li:last-child {
+    margin-right: 0;
+}
+.rbd .hd .right a {
+    position: relative;
+    display: inline-block;
+    padding-top: 40px;
+    width: 65px;
+    height: 65px;
+    color: #fff;
+}
+.rbd .hd .right a span {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -70px;
+}
+/* 订单 */
+.rbd .order {
+    width: 996px;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.rbd .order .tou {
+    position: relative;
+    height: 59px;
+    line-height: 59px;
+}
+.rbd .order .tou h2 {
+    float: left;
+    font-size: 19px;
+    font-weight: normal;
+    color:#333;
+}
+.rbd .order .tou p {
+    float: right;
+    color: #999;
+    margin-right: 26px;
+}
+.rbd .order .tou p::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+.rbd .order li {
+    width: 971px;
+    margin-bottom: 20px;
+    height: 137px;
+    border: 1px solid #f4f4f4;
+}
+.rbd .order li:last-child {
+    margin-bottom: 0;
+}
+.rbd .order li .left {
+    position: relative;
+    float: left;
+    width: 592px;
+    height: 137px;
+    border-right: 1px solid #f4f4f4;
+}
+.rbd .order li .left img {
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 13px;
+}
+.rbd .order li .left p {
+    /* p为块级标签，独占一行，想和img在一行，就得改为行内块 */
+    display: inline-block;
+    vertical-align: middle;
+}   
+.rbd .order li .left p span {
+    font-size: 14px;
+    color: #999;
+}
+.rbd .order li .left b {
+    position: absolute;
+    right: 85px;
+    top: 50px;
+    font-size: 14px;
+    color: #e05e30;
+    font-weight: normal;
+}
+.rbd .order li .left a {
+    position: absolute;
+    right: 78px;
+    top: 75px;
+    font-size: 14px;
+    color: #999;
+}
+
+.rbd .order li .center {
+    float: left;
+    width: 177px;
+    height: 137px;
+    border-right: 1px solid #f4f4f4;
+    text-align: center;
+}
+.rbd .order li .center p {
+    margin-top: 30px;
+    font-size: 14px;
+}
+.rbd .order li .center p span {
+    color: #9a2e1f;
+}
+
+.rbd .order li .right {
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.rbd .order li .right p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.rbd .order li .right p span a {
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #27ba9b;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 收藏 */
+.rbd .collect,
+.rbd .foot {
+    margin-top: 20px;
+    padding: 0 12px;
+    width: 996px;
+    height: 408px;
+    background-color: #fff;
+}
+.rbd .collect .tou,
+.rbd .foot .tou {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 2px solid #e8e8e8;
+}
+.rbd .collect .tou h2,
+.rbd .foot .tou h2 {
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.collect li,
+.foot li {
+    float: left;
+    margin-top: 22px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    padding: 15px 30px;
+    width: 236px;
+    height: 304px;
+}
+.collect li:last-child,
+.foot li:last-child {
+    margin-right: 0;
+}
+.collect li h3,
+.foot li h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+.collect li p,
+.foot li p {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.collect li span,
+.foot li span {
+    font-size: 22px;
+}
